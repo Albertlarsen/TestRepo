@@ -1,0 +1,13 @@
+.pageLayout {
+    margin-top: 20px;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 100px auto;
+}

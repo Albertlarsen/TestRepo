@@ -1,0 +1,60 @@
+{
+  "name": "chooose",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "run:server": "yarn json-server mock/db/db.json --port 3000",
+    "build": "vite build",
+    "test": "vite & wait-on http://localhost:5173 & cypress open",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css}' --config ./.prettierrc.cjs"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@navikt/aksel-icons": "^6.0.0",
+    "@reduxjs/toolkit": "^2.1.0",
+    "axios": "^1.3.4",
+    "classnames": "^2.3.2",
+    "dlx": "^0.2.1",
+    "framer-motion": "^11.1.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-redux": "^9.0.0",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^17.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "json-server": "1.0.0-alpha.23",
+    "prettier": "^3.0.0",
+    "typescript": "5.4.5",
+    "typescript-plugin-css-modules": "^5.0.0",
+    "vite": "^4.2.2",
+    "vite-plugin-json-server": "^0.1.1",
+    "vite-plugin-svgr": "^4.1.0"
+  },
+  "resolutions": {
+    "redux": "^5.0.0"
+  },
+  "packageManager": "yarn@4.1.1"
+}
