@@ -7,7 +7,6 @@
     "start": "vite",
     "run:server": "yarn json-server mock/db/db.json --port 3000",
     "build": "vite build",
-    "test": "vite & wait-on http://localhost:5173 & cypress open",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css}' --config ./.prettierrc.cjs"
