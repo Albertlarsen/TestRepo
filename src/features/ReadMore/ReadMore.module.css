@@ -1,21 +1,18 @@
-.pageLayout{
-    margin: 20px;
-}
-
 .layout {
-    margin-top: 30px;
     display: flex;
     justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
 }
 
-.cardLayout {
+.contentLayout {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
 .leftSection {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .buttonContainer {
@@ -24,6 +21,7 @@
 
 .sideCardContainer {
     margin-top: 180px;
+    margin-right: 20px;
 }
 
 .overviewContainer {
@@ -34,13 +32,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 30px;
 }
 
 .advantage {
     min-width: 80px;
-    max-width: 350px;
+}
+
+@media only screen and (min-width: 600px) {
+    .advantage {
+        max-width: 45%;
+    }    
 }
 
 .overviewText {
